@@ -13,6 +13,7 @@ services:
     runtime: nvidia
     environment:
       - ENV_METASEJONG_DOCKER=YES
+      - ENV_METASEJONG_SCENARIO=demo
       - FASTRTPS_DEFAULT_PROFILES_FILE=/metacom2025/simulation_app/config/fastdds.xml
       - ACCEPT_EULA=Y
       - PRIVACY_CONSENT=Y
@@ -28,6 +29,9 @@ services:
       - EXTENSIONS=omni.isaac.ros2_bridge
       - XAUTHORITY=/root/.Xauthority
     volumes:
+      - ./scenario-data:/metacom2025/scenario-data:rw
+      - ./resources/models:/metacom2025/resources/models:rw
+      - ./resources/assets:/metacom2025/resources/assets:rw
       - ${XAUTHORITY}:/root/.Xauthority:rw
       - .runtime-data/cache/kit:/isaac-sim/kit/cache:rw
       - .runtime-data/cache/ov:/root/.cache/ov:rw
@@ -36,10 +40,11 @@ services:
       - .runtime-data/cache/computecache:/root/.nv/ComputeCache:rw
       - .runtime-data/logs:/root/.nvidia-omniverse/logs:rw
       - .runtime-data/data:/root/.local/share/ov/data:rw
-      - ./scenario-data:/metacom2025/scenario-data:rw
     network_mode: "host"
     deploy:
       resources:
         reservations:
           devices:
-            - capabilities: [gpu]
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]

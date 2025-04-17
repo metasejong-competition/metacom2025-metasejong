@@ -1,9 +1,9 @@
 scenario:
-  name: Demo
-  description: 데모 시나리오
+  name: Gwanggaeto
+  description: 광개토관 시나리오
   time_constraint: 1
 playground:
-  usd_file: playground/S1-Demo/SejongUniv_S1.usd
+  usd_file: playground/S5-Gwanggaeto/SejongUniv_S5.usd 
   view_point:
     camera_view_eye: [-41.42598, 141.41728, 20.0]
     camera_view_target: [-54.55, 132.29, 1.02]

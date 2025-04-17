@@ -4,7 +4,7 @@
 #  *	Licence: TBD
 #  *******************************************************************************/
 
-.PHONY: help setup run down clean load-image
+.PHONY: help setup run down load
 .SILENT: help
 
 help:
@@ -13,6 +13,7 @@ help:
 # This tool now only supports compose V2, aka "docker compose" as it has replaced to old docker-compose tool.
 DOCKER_COMPOSE=docker compose
 DOCKER_TAR_FILE=metasejong-metacom2025-r02.tar
+RELEASE_PROJECT_PATH=../metacom2025-metasejong/
 
 # Setup only needs to be executed once.
 # The setup process includes logging into the NVIDIA Docker repository and configuring the X server.
