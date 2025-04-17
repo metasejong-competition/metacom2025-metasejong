@@ -1,0 +1,45 @@
+# Copyright (c) 2025, IoT Convergence & Open Sharing System (IoTCOSS)
+#
+# All rights reserved. This software and its documentation are proprietary and confidential.
+# The IoT Convergence & Open Sharing System (IoTCOSS) retains all intellectual property rights,
+# including but not limited to copyrights, patents, and trade secrets, in and to this software
+# and related documentation. Any use, reproduction, disclosure, or distribution of this software
+# and related documentation without explicit written permission from IoTCOSS is strictly prohibited.
+#
+
+services:
+  metacom2025-metasejong:
+    image: metasejong:metacom-2025-r02
+    runtime: nvidia
+    environment:
+      - ENV_METASEJONG_DOCKER=YES
+      - FASTRTPS_DEFAULT_PROFILES_FILE=/metacom2025/simulation_app/config/fastdds.xml
+      - ACCEPT_EULA=Y
+      - PRIVACY_CONSENT=Y
+      - DISPLAY=${DISPLAY}
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+      - RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+      - AMENT_PREFIX_PATH=/isaac-sim/exts/omni.isaac.ros2_bridge/humble
+      - LD_LIBRARY_PATH=/isaac-sim/exts/omni.isaac.ros2_bridge/humble/lib:$LD_LIBRARY_PATH
+      - PYTHONPATH=/isaac-sim/kit/python/lib/python3.10/site-packages:/isaac-sim/exts
+      - USD_PLUGIN_PATH=/isaac-sim/exts/omni.usd.schema.isaac/plugins
+      - ROS_DISTRO=humble
+      - EXTENSIONS=omni.isaac.ros2_bridge
+      - XAUTHORITY=/root/.Xauthority
+    volumes:
+      - ${XAUTHORITY}:/root/.Xauthority:rw
+      - .runtime-data/cache/kit:/isaac-sim/kit/cache:rw
+      - .runtime-data/cache/ov:/root/.cache/ov:rw
+      - .runtime-data/cache/pip:/root/.cache/pip:rw
+      - .runtime-data/cache/glcache:/root/.cache/nvidia/GLCache:rw
+      - .runtime-data/cache/computecache:/root/.nv/ComputeCache:rw
+      - .runtime-data/logs:/root/.nvidia-omniverse/logs:rw
+      - .runtime-data/data:/root/.local/share/ov/data:rw
+      - ./scenario-data:/metacom2025/scenario-data:rw
+    network_mode: "host"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]

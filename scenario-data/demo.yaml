@@ -1,0 +1,39 @@
+scenario:
+  name: Demo
+  description: 데모 시나리오
+  time_constraint: 1
+playground:
+  usd_file: playground/S1-Demo/demo_field.usd 
+  view_point:
+    camera_view_eye: [-41.42598, 141.41728, 20.0]
+    camera_view_target: [-54.55, 132.29, 1.02]
+mission:
+  demo_1:
+    camera_info:
+      focal_length: 4
+      horizontal_aperture: 4.8
+      position: [-59.11074, 156.4267, 5.90819]
+      rotation: [-77.723, -16.229, -175.98]
+      ground_height: 1.0
+    mission_objects:
+      master_chef_can: 1
+      wood_block: 1
+      tissue: 1
+      cola_can: 1
+      juice: 1
+      cracker_box: 1
+  demo_2:
+    camera_info:
+      focal_length: 4
+      horizontal_aperture: 4.8
+      ground_height: 1.0
+      position: [-9.53839, 114.43787, 26.28911]
+      rotation: [19.118, 45.155, -35.899]
+    mission_objects:
+      master_chef_can: 1
+      wood_block: 1
+      cola_can: 1
+      juice: 1   
+robot:
+  start_point: [-59.57265, 130.77582, 1.3795]
+force_generate_answer_sheet: false

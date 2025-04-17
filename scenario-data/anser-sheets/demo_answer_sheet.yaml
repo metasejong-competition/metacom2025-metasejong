@@ -1,0 +1,162 @@
+camera_info: []
+mission_area:
+- demo_1:
+    bottom_left:
+    - -52.2018150067933
+    - 137.54910907240327
+    - 1.0
+    bottom_right:
+    - -54.553300110074844
+    - 136.74575386847675
+    - 1.0
+    top_left:
+    - -49.41285948580372
+    - 129.9112408421919
+    - 1.0
+    top_right:
+    - -52.65714844282607
+    - 128.74714744893294
+    - 1.0
+- demo_2:
+    bottom_left:
+    - -40.53004219624085
+    - 123.54360074401828
+    - 1.0
+    bottom_right:
+    - -34.20507711964838
+    - 120.83392594708448
+    - 1.0000000000000036
+    top_left:
+    - -38.97769641727515
+    - 125.8748404493017
+    - 1.0
+    top_right:
+    - -32.92039973524544
+    - 122.91021098693436
+    - 1.0
+mission_objects:
+- area_name: demo_1
+  class_name: master_chef_can
+  position:
+  - -50.59782244841221
+  - 130.54975683947893
+  - 1.5
+  recyclable: true
+  rotation:
+  - 94.89725789951513
+  - 148.29168199427346
+  - 101.56298358757181
+  seq: 0
+- area_name: demo_1
+  class_name: wood_block
+  position:
+  - -52.42841195091571
+  - 135.44751321083302
+  - 1.5
+  recyclable: false
+  rotation:
+  - 12.170262905186092
+  - 125.82799500695029
+  - 152.16182869286064
+  seq: 0
+- area_name: demo_1
+  class_name: tissue
+  position:
+  - -51.538380737497526
+  - 130.3952422274172
+  - 1.5
+  recyclable: true
+  rotation:
+  - -168.03895019604082
+  - 56.203113184386325
+  - 74.72943400975856
+  seq: 0
+- area_name: demo_1
+  class_name: cola_can
+  position:
+  - -53.30930178430722
+  - 136.01602859301553
+  - 1.5
+  recyclable: true
+  rotation:
+  - 35.26180193429707
+  - 4.794945306339486
+  - -142.78629574689376
+  seq: 0
+- area_name: demo_1
+  class_name: juice
+  position:
+  - -54.18983511566024
+  - 136.25855859145562
+  - 1.5
+  recyclable: true
+  rotation:
+  - -155.72497397814217
+  - -11.476404732885413
+  - 130.2107255786142
+  seq: 0
+- area_name: demo_1
+  class_name: cracker_box
+  position:
+  - -52.37842242082351
+  - 129.39122302442047
+  - 1.5
+  recyclable: true
+  rotation:
+  - -9.469692526030713
+  - -90.38028127393648
+  - -91.99155511728004
+  seq: 0
+- area_name: demo_2
+  class_name: master_chef_can
+  position:
+  - -38.599635794868334
+  - 124.09297830509587
+  - 1.5
+  recyclable: true
+  rotation:
+  - -88.48051294875806
+  - -84.37237210769676
+  - 31.398157894767564
+  seq: 0
+- area_name: demo_2
+  class_name: wood_block
+  position:
+  - -35.169328057851466
+  - 123.18562222324391
+  - 1.5
+  recyclable: false
+  rotation:
+  - 45.78471664309765
+  - -6.204207783699246
+  - 76.36035032176528
+  seq: 0
+- area_name: demo_2
+  class_name: cola_can
+  position:
+  - -34.31874029962723
+  - 123.10283994621587
+  - 1.5
+  recyclable: true
+  rotation:
+  - 153.30942771664894
+  - -133.81438245637628
+  - -119.41649610973712
+  seq: 0
+- area_name: demo_2
+  class_name: juice
+  position:
+  - -35.69655077311328
+  - 122.39804835369583
+  - 1.5
+  recyclable: true
+  rotation:
+  - -28.140418538492924
+  - -101.96688939092185
+  - 133.3669648884773
+  seq: 0
+scenario_id: demo
+start_position:
+- -59.57265
+- 130.77582
+- 1.3795

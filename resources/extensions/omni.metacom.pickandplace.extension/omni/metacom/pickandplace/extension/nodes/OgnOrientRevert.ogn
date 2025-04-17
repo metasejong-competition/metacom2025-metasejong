@@ -1,0 +1,40 @@
+{
+    "reverted_orientation": {
+        "version": 1,
+        "description": "",
+        "language": "Python",
+        "metadata": {
+            "uiName": "Orientation Revert X as PI"
+        },
+        "inputs": {
+            "orientation": {
+                "type": "double[4]",
+                "description": "",
+                "metadata": {
+                    "uiName": "Orientation"
+                },
+                "default": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            }
+        },
+        "outputs": {
+            "reverted_orientation": {
+                "type": "double[4]",
+                "description": "",
+                "default": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "metadata": {
+                    "uiName": "Reverted Orientation"
+                }
+            }
+        }
+    }
+}

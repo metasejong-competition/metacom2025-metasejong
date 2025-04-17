@@ -1,0 +1,42 @@
+scenario:
+  name: Chungmu
+  description: 충무관 시나리오
+  time_constraint: 15
+playground:
+  usd_file: playground/chungmu_area.usd
+  view_point:
+    camera_view_eye: [-113.03272, 64.98621, 30.59225]
+    camera_view_target: [-63, 119, 1.02]
+mission:
+  chungmu_1:
+    camera_info:
+      focal_length: 30.0
+      horizontal_aperture: 40.0
+      ground_height: 1.0
+      position: [-17.96172, 127.59245, 5.63505]
+      rotation: [160.212, 38.465, -60.051]
+    mission_objects:
+      master_chef_can: 3
+      cracker_box: 3
+      mug: 3
+      wood_block: 3
+      cola_can: 3
+      disposable_cup: 3
+      juice: 3   
+  chungmu_2:
+    camera_info:
+      focal_length: 30.0
+      horizontal_aperture: 40.0
+      ground_height: 1.0
+      position: [-59.11074, 156.4267, 5.90819]
+      rotation: [-175.98, -16.229, -77.723]
+    mission_objects:
+      master_chef_can: 3
+      cracker_box: 3
+      mug: 3
+      wood_block: 3
+      cola_can: 3
+      disposable_cup: 3
+      juice: 3   
+robot:
+  start_point: [-90.94401, 96.38982, 14.93225]

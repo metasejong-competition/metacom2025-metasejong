@@ -1,0 +1,79 @@
+{
+    "translate_placement_node": {
+        "version": 1,
+        "description": "",
+        "language": "Python",
+        "metadata": {
+            "uiName": "Translate Placement Node"
+        },
+        "inputs": {
+            "transformation": {
+                "type": "matrixd[4]",
+                "description": "",
+                "metadata": {
+                    "uiName": "Transformation"
+                },
+                "default": [
+                    [
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        0.0,
+                        0.0,
+                        1.0
+                    ]
+                ]
+            },
+            "translate_vec": {
+                "type": "double[3]",
+                "description": "",
+                "metadata": {
+                    "uiName": "Translate Vector"
+                },
+                "default": [
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            "execIn": {
+                "type": "execution",
+                "description": "",
+                "default": 0,
+                "metadata": {
+                    "uiName": "Execute In"
+                }
+            }
+        },
+        "outputs": {
+            "result": {
+                "type": "double[3]",
+                "description": "",
+                "metadata": {
+                    "uiName": "Result"
+                },
+                "default": [
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            }
+        }
+    }
+}

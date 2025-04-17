@@ -1,0 +1,17 @@
+*.tar
+resources/models
+*.zip
+*.pyc
+*.bak
+*.bkp
+*.dtmp
+**/.thumbs
+**/__pycache__
+**/__pycache__/
+*.dtmp
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+.runtime-data/
