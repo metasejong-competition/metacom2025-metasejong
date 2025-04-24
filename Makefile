@@ -12,8 +12,8 @@ help:
 
 # This tool now only supports compose V2, aka "docker compose" as it has replaced to old docker-compose tool.
 DOCKER_COMPOSE=docker compose
-DOCKER_IMAGE_FILE_ID=10r-tzDj0qS6OKWEle0gl4GnRtEitVKD5
-DOCKER_IMAGE_TAR_FILE=metasejong-metacom2025-r03.tar
+DOCKER_IMAGE_FILE_ID=1DJ9TKhRjXyTLyUMTSaaSEs4mg_UPDcd4
+DOCKER_IMAGE_TAR_FILE=metasejong-metacom2025-with-playground-r05.tar
 
 
 
