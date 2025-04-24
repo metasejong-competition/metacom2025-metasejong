@@ -9,7 +9,7 @@
 
 services:
   metacom2025-metasejong:
-    image: metasejong-metacom2025-with-playground-r05
+    image: metasejong:metacom-2025-with-playground-r05
     runtime: nvidia
     environment:
       - ENV_METASEJONG_DOCKER=YES

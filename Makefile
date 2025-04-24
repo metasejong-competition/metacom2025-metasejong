@@ -37,7 +37,7 @@ download:
 		echo "Downloading file from Google Drive..."; \
 		if ! command -v gdown >/dev/null 2>&1; then \
 			echo "Installing gdown..."; \
-			pip3 install --user gdown; \
+			pip3 install --upgrade --no-cache-dir gdown; \
 		fi; \
 		PYTHON_USER_BIN=$$(python3 -m site --user-base)/bin; \
 		if [ -d "$$PYTHON_USER_BIN" ]; then \
