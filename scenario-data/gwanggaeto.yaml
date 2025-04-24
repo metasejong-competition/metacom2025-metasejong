@@ -1,20 +1,20 @@
 scenario:
   name: Gwanggaeto
   description: 광개토관 시나리오
-  time_constraint: 1
+  time_constraint: 10
 playground:
-  usd_file: playground/S5-Gwanggaeto/SejongUniv_S5.usd 
+  usd_file: playground/S5-Gwanggaeto/SejongUniv_S5.usd
   view_point:
-    camera_view_eye: [-41.42598, 141.41728, 20.0]
-    camera_view_target: [-54.55, 132.29, 1.02]
+    camera_view_eye: [-18.47782, -97.52673, 11.97934]
+    camera_view_target: [-25.46832, -89.08225, 7.73739]
 mission:
-  demo_1:
+  gwanggaeto_1:
     camera_info:
       focal_length: 4
       horizontal_aperture: 4.8
-      position: [-59.11074, 156.4267, 5.90819]
-      rotation: [-77.723, -16.229, -175.98]
-      ground_height: 1.0
+      position: [-44.25665, -111.62723, 15.26974]
+      rotation: [71.514, 33.48, 6.437]
+      ground_height: 7.4
     mission_objects:
       master_chef_can: 1
       wood_block: 1
@@ -22,18 +22,18 @@ mission:
       cola_can: 1
       juice: 1
       cracker_box: 1
-  demo_2:
+  gwanggaeto_2:
     camera_info:
       focal_length: 4
       horizontal_aperture: 4.8
-      ground_height: 1.0
-      position: [-9.53839, 114.43787, 26.28911]
-      rotation: [19.118, 45.155, -35.899]
+      ground_height: 7.4
+      position: [-53.22789, -51.72105, 18.78845]
+      rotation: [-53.714, 21.831, 169.244]
     mission_objects:
       master_chef_can: 1
       wood_block: 1
       cola_can: 1
-      juice: 1   
+      juice: 1
 robot:
-  start_point: [-59.57265, 130.77582, 1.3795]
+  start_point: [-25.46832, -89.08225, 7.73739]
 force_generate_answer_sheet: false

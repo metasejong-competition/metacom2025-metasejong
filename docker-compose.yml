@@ -9,7 +9,7 @@
 
 services:
   metacom2025-metasejong:
-    image: metasejong:metacom-2025-r02
+    image: metasejong:metacom-2025-r03
     runtime: nvidia
     environment:
       - ENV_METASEJONG_DOCKER=YES
@@ -30,8 +30,7 @@ services:
       - XAUTHORITY=/root/.Xauthority
     volumes:
       - ./scenario-data:/metacom2025/scenario-data:rw
-      - ./resources/models:/metacom2025/resources/models:rw
-      - ./resources/assets:/metacom2025/resources/assets:rw
+      - ./resources/models/playground:/metacom2025/resources/models/playground:rw
       - ${XAUTHORITY}:/root/.Xauthority:rw
       - .runtime-data/cache/kit:/isaac-sim/kit/cache:rw
       - .runtime-data/cache/ov:/root/.cache/ov:rw

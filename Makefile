@@ -13,14 +13,14 @@ help:
 # This tool now only supports compose V2, aka "docker compose" as it has replaced to old docker-compose tool.
 DOCKER_COMPOSE=docker compose
 DOCKER_IMAGE_FILE_ID=10r-tzDj0qS6OKWEle0gl4GnRtEitVKD5
-DOCKER_IMAGE_TAR_FILE=metasejong-metacom2025-r02.tar
+DOCKER_IMAGE_TAR_FILE=metasejong-metacom2025-r03.tar
 
 
 
 # Setup only needs to be executed once.
 # The setup process includes logging into the NVIDIA Docker repository and configuring the X server.
 setup:
-	# docker login nvcr.io
+	docker login nvcr.io
 	xhost +local:
 
 # Stop the running Docker container.

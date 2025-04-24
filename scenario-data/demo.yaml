@@ -1,7 +1,7 @@
 scenario:
   name: Demo
   description: 데모 시나리오
-  time_constraint: 1
+  time_constraint: 20
 playground:
   usd_file: playground/S1-Demo/SejongUniv_S1.usd
   view_point:
@@ -37,3 +37,4 @@ mission:
 robot:
   start_point: [-59.57265, 130.77582, 1.3795]
 force_generate_answer_sheet: false
+draw_mission_debug_lines: false

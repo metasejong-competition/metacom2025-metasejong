@@ -3,18 +3,18 @@ scenario:
   description: 집현관 시나리오
   time_constraint: 15
 playground:
-  usd_file: playground/S4-Jiphyeon/SejongUniv_S4.usd 
+  usd_file: playground/S4-Jiphyeon/SejongUniv_S4.usd
   view_point:
-    camera_view_eye: [2099.23486, -19210.53516, 1902.87378]
-    camera_view_target: [1549.7406, -20310.26758, 1952.0]
+    camera_view_eye: [20.9923486, -192.1053516, 19.0287378]
+    camera_view_target: [15.497406, -203.1026758, 10.520]
 mission:
   jiphyeon_1:
     camera_info:
       focal_length: 4
       horizontal_aperture: 4.8
-      position: [4704.8916015625, -23614.65234375, 3145.357421875]
-      rotation: [47.68, 19.744, 23.942]
-      ground_height: 1897.44473
+      position: [47.04892, -230.07169, 26.48454]
+      rotation: [14.858, 1.092, 25.122]
+      ground_height: 7.76924
     mission_objects:
       master_chef_can: 1
       wood_block: 1
@@ -26,14 +26,14 @@ mission:
     camera_info:
       focal_length: 4
       horizontal_aperture: 4.8
-      ground_height: 1897.44473
-      position: [846.9118, -23529.00586, 3110.94043]
-      rotation: [53.752, -27.808, -14.089]
+      ground_height: 7.76924
+      position: [8.46912, -231.67674, 30.8]
+      rotation: [15.808, 1.213, 23.997]
     mission_objects:
       master_chef_can: 1
       wood_block: 1
       cola_can: 1
-      juice: 1   
+      juice: 1
 robot:
-  start_point: [1549.7406, -20310.26758, 2036.16611]
+  start_point: [15.497406, -203.1026758, 10.3616611]
 force_generate_answer_sheet: false
