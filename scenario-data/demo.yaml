@@ -1,40 +1,39 @@
 scenario:
   name: Demo
   description: 데모 시나리오
-  time_constraint: 20
+  time_constraint: 30
 playground:
-  usd_file: playground/S1-Demo/SejongUniv_S1.usd
+  usd_file: playground/S1/SejongUniv_S1.usd
   view_point:
-    camera_view_eye: [-41.42598, 141.41728, 20.0]
-    camera_view_target: [-54.55, 132.29, 1.02]
+    camera_view_eye: [-61.53516, 139.77144, 25.0]
+    camera_view_target: [-65.0475, 130.98898, 16.24493]
 mission:
   demo_1:
     camera_info:
       focal_length: 4
       horizontal_aperture: 4.8
-      position: [-59.11074, 156.4267, 5.90819]
-      rotation: [-77.723, -16.229, -175.98]
-      ground_height: 1.0
+      position: [-60.86416, 152.94693, 21.47511]
+      rotation: [-74.492, -23.79, -168.446]
+      ground_height: 16.5
     mission_objects:
-      master_chef_can: 1
-      wood_block: 1
-      tissue: 1
-      cola_can: 1
-      juice: 1
-      cracker_box: 1
+      master_chef_can: 3
+      wood_block: 3
+      tissue: 3
+      cola_can: 3
+      juice: 3
   demo_2:
     camera_info:
       focal_length: 4
       horizontal_aperture: 4.8
-      ground_height: 1.0
-      position: [-9.53839, 114.43787, 26.28911]
-      rotation: [19.118, 45.155, -35.899]
+      ground_height: 16.8
+      position: [-31.50976, 136.45802, 21.27105]
+      rotation: [-72.435, 30.821, 167.397]
     mission_objects:
-      master_chef_can: 1
-      wood_block: 1
-      cola_can: 1
-      juice: 1   
+      master_chef_can: 3
+      wood_block: 3
+      cola_can: 3
+      juice: 3   
+      cracker_box: 0
 robot:
-  start_point: [-59.57265, 130.77582, 1.3795]
-force_generate_answer_sheet: false
+  start_point: [-65.0475, 130.98898, 17.0]
 draw_mission_debug_lines: false

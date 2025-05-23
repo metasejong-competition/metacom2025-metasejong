@@ -9,11 +9,12 @@
 
 services:
   metacom2025-metasejong:
-    image: metasejong:metacom-2025-with-playground-r05
+    image: metasejong:metacom-2025-with-playground-r06
     runtime: nvidia
     environment:
       - ENV_METASEJONG_DOCKER=YES
-      - ENV_METASEJONG_SCENARIO=demo
+      - AVAILABLE_METASEJONG_SCENARIOS=demo dongcheon jiphyeon gwanggaeto
+      - ENV_METASEJONG_SCENARIO=${ENV_METASEJONG_SCENARIO}
       - FASTRTPS_DEFAULT_PROFILES_FILE=/metacom2025/simulation_app/config/fastdds.xml
       - ACCEPT_EULA=Y
       - PRIVACY_CONSENT=Y

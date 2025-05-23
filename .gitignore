@@ -16,3 +16,6 @@ resources/models
 *.pyz
 .runtime-data/
 scenario-data/answer-sheets
+/scenario-data/anser-sheets
+/scenario-data/anser-sheets
+/scenario-data/answer-sheets

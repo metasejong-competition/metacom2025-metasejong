@@ -3,51 +3,37 @@ scenario:
   description: 동천관 시나리오
   time_constraint: 10
 playground:
-  usd_file: playground/S3-Dongcheon/SejongUniv_S3.usd
+  usd_file: playground/S3/SejongUniv_S3.usd
   view_point:
-    camera_view_eye: [-26.20845, 18.25629, 14.02502]
-    camera_view_target: [-52.80285, 11.23041, 1.02]
+    camera_view_eye: [-34.49608, 25.24217, 40.0]
+    camera_view_target: [-43.07861, 0.26965, 15.93874]
 mission:
   dongcheon_1:
     camera_info:
       focal_length: 4
       horizontal_aperture: 4.8
-      position: [-56.1681, -8.9953, 33]
-      rotation: [4.782, -9.732, -60.183]
-      ground_height: 2.3
+      position: [-55.64634, -9.32143, 21.47511]
+      rotation: [72.326, -16.222, -14.042]
+      ground_height: 16.0
     mission_objects:
-      master_chef_can: 1
-      wood_block: 1
-      tissue: 1
-      cola_can: 1
-      juice: 1
-      cracker_box: 1
+      master_chef_can: 3
+      wood_block: 3
+      tissue: 3
+      cola_can: 3
+      juice: 3
+      cracker_box: 3
   dongcheon_2:
     camera_info:
       focal_length: 4
       horizontal_aperture: 4.8
-      ground_height: 2.3
-      position: [-67.1, 15.16871, 30]
-      rotation: [-9.412, -2.054, -157.492]
+      ground_height: 15.8
+      position: [-55.54975, 21.41175, 19.37973]
+      rotation: [-67.918, -61.773, -164.059]
     mission_objects:
-      master_chef_can: 1
-      wood_block: 1
-      cola_can: 1
-      juice: 1   
-  dongcheon_3:
-    camera_info:
-      focal_length: 4
-      horizontal_aperture: 4.8
-      position: [-56.1681, -8.9953, 13.86817]
-      rotation: [54.942, -17.417, -10.433]
-      ground_height: 2.3
-    mission_objects:
-      master_chef_can: 1
-      wood_block: 1
-      tissue: 1
-      cola_can: 1
-      juice: 1
-      cracker_box: 1
+      master_chef_can: 3
+      wood_block: 3
+      cola_can: 3
+      juice: 3   
 robot:
-  start_point: [-41.84269, 20.6779, 4.7035]
-force_generate_answer_sheet: false
+  start_point: [-27.03296, 1.96353, 16.0]
+draw_mission_debug_lines: false
